@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+
+{% block title %}
+    {{reason.title}}
+{% endblock %}
+
+{% block content %}
+    <h1>{{reason.title}}</h1>
+    <p>{{reason.title}}: {{reason.explanation}}</p>
+    <p>Back to <a href="/">Reasons </a></p>
+{% endblock %}

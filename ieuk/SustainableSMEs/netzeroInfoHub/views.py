@@ -11,3 +11,12 @@ def home(request):
         'reasons': reasons,
     }
     return HttpResponse(template.render(context, request))
+
+def detailed(request, id):
+    template = loader.get_template("details.html")
+    reason = Reason.objects.get(id=id)
+    context = {
+        'reason': reason,
+    }
+    return HttpResponse(template.render(context, request))
+

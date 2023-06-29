@@ -1,0 +1,50 @@
+body{
+    color: #344e41;
+    background-color: #344e41;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li > a{
+    list-style-type: none;
+    background-color: #344e41;
+    color: #dad7cd;
+    font-size: 125%;
+}
+
+p > a{
+    color: #22577a;
+}
+
+li > a:hover, li:hover{
+    transition-duration: 500ms;
+    background-color: #3a5a40;
+}
+
+.mainBlock{
+    background-color: #dad7cd;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+a{
+    color: #dad7cd;
+}
+
+p{
+    font-size: 125%;
+}
+
+li{
+    margin: 25px;
+    padding: 10px;
+    background-color: #344e41;
+    border-radius: 20px;
+    color: #dad7cd;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
