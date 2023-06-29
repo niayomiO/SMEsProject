@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+    </head>
+    <body>
+        {% include "header.html" %}
+
+        <div class="mainBlock">
+            {% block content %}
+            {% endblock %}
+        </div>
+        
+        {% include "footer.html" %}
+    </body>
+</html>

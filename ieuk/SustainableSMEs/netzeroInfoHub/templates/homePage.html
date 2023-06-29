@@ -1,0 +1,15 @@
+{% extends "master.html" %}
+
+{% block title %}
+    SMEs to Net Zero
+{% endblock %}
+
+{% block content %}
+    <h1>Net Zero<br></h1>
+    <!-- <h2></h2> -->
+    <ul>
+        {%for x in reasons%}
+            <li><a href="details/{{x.id}}"><h2>{{x.title}}</h2></a><h3>{{x.explanation}}</h3></li>
+        {%endfor%}
+    </ul>
+{% endblock %}
